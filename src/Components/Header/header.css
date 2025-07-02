@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: #0d86ab;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-congratulation {
+  font-size: 34px;
+  font-family: Kanit;
+  font-weight: 700;
+}

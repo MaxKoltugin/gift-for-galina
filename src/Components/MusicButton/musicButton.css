@@ -1,0 +1,23 @@
+.music-control {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.music-button {
+  border: none;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: inter;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  background-color: #5db2d3;
+  color: rgb(255, 255, 255);
+}
+
+.neon-button {
+  transform: rotateY(360deg) translateY(-5px);
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: #436296;
+}
