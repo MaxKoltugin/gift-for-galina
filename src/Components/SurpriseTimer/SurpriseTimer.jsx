@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./surpriseTimer.css";
 import FlipCard from "../FlipCard/FlipCard";
+import giftImage from "./gift.png";
 
 const SurpriseTimer = () => {
   return (

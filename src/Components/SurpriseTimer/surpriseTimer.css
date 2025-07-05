@@ -116,7 +116,7 @@
 .countdown-timer {
   background-color: #addbe6;
   position: relative;
-  background-image: url("/public/gift.png");
+  background-image: url("https://maxkoltugin.github.io/gift-for-galina/gift.png");
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;

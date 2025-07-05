@@ -3,37 +3,79 @@ import { useEffect, useState, useRef } from "react";
 
 const FlipCard = ({ surpriseDate, surpriseImage }) => {
   const surpriseSounds = useRef({
-    sound1: new Audio("sound1.mp3"),
-    sound2: new Audio("sound2.mp3"),
-    sound3: new Audio("sound3.mp3"),
-    sound4: new Audio("sound4.mp3"),
-    sound5: new Audio("sound5.mp3"),
-    sound6: new Audio("overlay-music.mp3"),
+    sound1: new Audio(
+      "https://maxkoltugin.github.io/gift-for-galina/sound1.mp3"
+    ),
+    sound2: new Audio(
+      "https://maxkoltugin.github.io/gift-for-galina/sound2.mp3"
+    ),
+    sound3: new Audio(
+      "https://maxkoltugin.github.io/gift-for-galina/sound3.mp3"
+    ),
+    sound4: new Audio(
+      "https://maxkoltugin.github.io/gift-for-galina/sound4.mp3"
+    ),
+    sound5: new Audio(
+      "https://maxkoltugin.github.io/gift-for-galina/sound5.mp3"
+    ),
+    sound6: new Audio(
+      "https://maxkoltugin.github.io/gift-for-galina/overlay-music.mp3"
+    ),
   });
 
+  // const surprisesTime = {
+  //   surprise1: new Date(Date.UTC(2025, 6, 6, 2, 0)),
+  //   surprise2: new Date(Date.UTC(2025, 6, 6, 4, 0)),
+  //   surprise3: new Date(Date.UTC(2025, 6, 6, 6, 0)),
+  //   surprise4: new Date(Date.UTC(2025, 6, 6, 8, 0)),
+  //   surprise5: new Date(Date.UTC(2025, 6, 6, 10, 0)),
+  //   surprise6: new Date(Date.UTC(2025, 6, 6, 12, 0)),
+  // };
   const surprisesTime = {
-    surprise1: new Date(Date.UTC(2025, 6, 6, 2, 0)),
-    surprise2: new Date(Date.UTC(2025, 6, 6, 4, 0)),
-    surprise3: new Date(Date.UTC(2025, 6, 6, 6, 0)),
-    surprise4: new Date(Date.UTC(2025, 6, 6, 8, 0)),
-    surprise5: new Date(Date.UTC(2025, 6, 6, 10, 0)),
-    surprise6: new Date(Date.UTC(2025, 6, 6, 12, 0)),
+    surprise1: new Date(Date.UTC(2025, 5, 6, 2, 0)),
+    surprise2: new Date(Date.UTC(2025, 5, 6, 4, 0)),
+    surprise3: new Date(Date.UTC(2025, 5, 6, 6, 0)),
+    surprise4: new Date(Date.UTC(2025, 5, 6, 8, 0)),
+    surprise5: new Date(Date.UTC(2025, 5, 6, 10, 0)),
+    surprise6: new Date(Date.UTC(2025, 5, 6, 12, 0)),
   };
 
   const surprisesImg = {
     surprise1: (
-      <img className="person-img dima-img" src="/Dima.jpg" alt="Dima" />
+      <img
+        className="person-img dima-img"
+        src="https://maxkoltugin.github.io/gift-for-galina/Dima.jpg"
+        alt="Dima"
+      />
     ),
     surprise2: (
-      <img className="person-img katia-img" src="/Katia.jpg" alt="Katia" />
+      <img
+        className="person-img katia-img"
+        src="https://maxkoltugin.github.io/gift-for-galina/Katia.jpg"
+        alt="Katia"
+      />
     ),
     surprise3: (
-      <img className="person-img nikita-img" src="/Nikita.jpg" alt="Nikita" />
+      <img
+        className="person-img nikita-img"
+        src="https://maxkoltugin.github.io/gift-for-galina/Nikita.jpg"
+        alt="Nikita"
+      />
     ),
     surprise4: (
-      <img className="person-img andrey-img" src="/Andrey.jpg" alt="Andrey" />
+      <img
+        className="person-img andrey-img"
+        src="https://maxkoltugin.github.io/gift-for-galina/Andrey.jpg"
+        alt="Andrey"
+      />
     ),
-    surprise5: <img className="person-img max-img" src="/Max.jpg" alt="Max" />,
+    surprise5: (
+      <img
+        className="person-img max-img"
+        src="https://maxkoltugin.github.io/gift-for-galina/Max.jpg"
+        alt="Max"
+      />
+    ),
     surprise6: (
       <p className="sixth-gift">В течении 24ч ожидайте ФИНАЛЬНЫЙ подарок</p>
     ),
@@ -57,6 +99,7 @@ const FlipCard = ({ surpriseDate, surpriseImage }) => {
       audio.pause();
       setIsPlaying(false);
     } else {
+      audio.load();
       audio.currentTime = 0;
       audio
         .play()
@@ -120,9 +163,17 @@ const FlipCard = ({ surpriseDate, surpriseImage }) => {
             className={`flip-card-front ${isOpen ? "active" : ""}`}
           >
             {isOpen ? (
-              <img className="gift-img" src="/gift-open.png" alt="Gift Open" />
+              <img
+                className="gift-img"
+                src="https://maxkoltugin.github.io/gift-for-galina/gift-open.png"
+                alt="Gift Open"
+              />
             ) : (
-              <img className="gift-img" src="/gift.png" alt="Gift" />
+              <img
+                className="gift-img"
+                src="https://maxkoltugin.github.io/gift-for-galina/gift.png"
+                alt="Gift"
+              />
             )}
           </div>
           <div onClick={handleSoundStop} className="flip-card-back">

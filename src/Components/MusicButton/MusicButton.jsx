@@ -31,7 +31,10 @@ const MusicButton = () => {
         {isPlaying ? "🔇 Выключить музыку" : "🔊 Включить музыку"}
       </button>
       <audio ref={audioRef} loop>
-        <source src="overlay-music.mp3" type="audio/mp3" />
+        <source
+          src="https://maxkoltugin.github.io/gift-for-galina/overlay-music.mp3"
+          type="audio/mp3"
+        />
       </audio>
     </div>
   );

@@ -3,19 +3,19 @@ import "./footer.css";
 const Footer = () => {
   const handleShareW = () => {
     window.open(
-      "whatsapp://send?text=Подарок на мой день рождения! 🎉%0Ahttps://maxkoltugin.github.io/gift-for-lyubov/"
+      "whatsapp://send?text=Подарок на мой день рождения! 🎉%0Ahttps://MaxKoltugin.github.io/gift-for-galina/"
     );
   };
   const handleShareTg = () => {
     window.open(
-      "https://t.me/share/url?url=https://maxkoltugin.github.io/gift-for-lyubov/&text=Подарок на мой день рождения! 🎉"
+      "https://t.me/share/url?url=https://MaxKoltugin.github.io/gift-for-galina/&text=Подарок на мой день рождения! 🎉"
     );
   };
 
   return (
     <div className="footer">
       <div className="footer-logo-wrapper">
-        <img className="footer-logo" src={"/logo-big.png"} alt="" />
+        <img className="footer-logo" src={"https://maxkoltugin.github.io/gift-for-galina/logo-big.png"} alt="" />
       </div>
       <div className="author-wrapper">
         <p className="author">
@@ -35,14 +35,14 @@ const Footer = () => {
             title="share to whatsapp"
             onClick={handleShareW}
           >
-            <img className="wp" src="/w.svg" alt="" />
+            <img className="wp" src="https://maxkoltugin.github.io/gift-for-galina/w.svg" alt="" />
           </button>
           <button
             className="wpbtn"
             title="share to telegram"
             onClick={handleShareTg}
           >
-            <img className="tg" src="/tg.svg" alt="" />
+            <img className="tg" src="https://maxkoltugin.github.io/gift-for-galina/tg.svg" alt="" />
           </button>
         </div>
       </div>
