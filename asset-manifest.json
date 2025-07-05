@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gift-for-galina/static/css/main.11dc97cb.css",
-    "main.js": "/gift-for-galina/static/js/main.387061e2.js",
+    "main.js": "/gift-for-galina/static/js/main.16e82c81.js",
     "static/media/gift.png": "/gift-for-galina/static/media/gift.02079e6fe10d219b64e5.png",
     "index.html": "/gift-for-galina/index.html",
     "main.11dc97cb.css.map": "/gift-for-galina/static/css/main.11dc97cb.css.map",
-    "main.387061e2.js.map": "/gift-for-galina/static/js/main.387061e2.js.map"
+    "main.16e82c81.js.map": "/gift-for-galina/static/js/main.16e82c81.js.map"
   },
   "entrypoints": [
     "static/css/main.11dc97cb.css",
-    "static/js/main.387061e2.js"
+    "static/js/main.16e82c81.js"
   ]
 }
